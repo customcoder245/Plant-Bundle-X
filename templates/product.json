@@ -1,0 +1,325 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "e587b954-6527-4e4f-a14b-2afe4b7b4d21": {
+          "type": "shopify://apps/stamped-reviews/blocks/star-rating-badge/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "use_metafields": true,
+            "sku_tagtype": "sku",
+            "is_featured_product": false,
+            "featured_product_handle": ""
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "separator": {
+          "type": "separator",
+          "disabled": true,
+          "settings": {}
+        },
+        "32727012-a894-4fb3-a556-a05b362872df": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "color_swatches": false
+          }
+        },
+        "pot_selector_block": {
+          "type": "shopify://apps/houseplant-app/blocks/pot-selector/dd0325d3-ba8b-603e-47a9-c78559eae9a4ce2445b9",
+          "settings": {
+            "app_url": "https://plant-bundle-x-production.up.railway.app",
+            "image_selector": ""
+          }
+        },
+        "1bb051c8-a27a-466d-beae-b006b002869a": {
+          "type": "custom",
+          "settings": {
+            "code": "{%if product.tags contains 'houseplant' or product.tags contains 'Houseplant' %}\n{%else%}\n<p class=\"common_note product-type-{{product.type}}\"><span style=\"color:hsl(30,75%,60%);\"><i><strong><u>Please note:</u></strong></i> All Landscape Ready plants that are in a 6-inch pot or larger <strong>WILL NOT</strong> come with a pot as it will be shipped bare root.</span></p>\n{%endif%}"
+          }
+        },
+        "a5efb4d3-5d31-4a80-9a2a-f468f060f3f9": {
+          "type": "custom",
+          "settings": {
+            "code": "{{ collection.metafields.merchandise.shipping.value }}"
+          }
+        },
+        "2b6eef41-cddb-4154-8bf1-97d7ebc6eb68": {
+          "type": "custom",
+          "settings": {
+            "code": "{%if product.tags contains 'houseplant' or product.tags contains 'Houseplant' %}\n{%else%}\n<p class=\"large_notice product-type-{{product.type}}\"><b><u>Please note</u></b>: Our large plants are many years old, and as a result, they might have minor scaring but will arrive 100% healthy and looking great. </p>\n<p class=\"above_five\">\n<b><u>Please note</u></b>: Our large plants are shipped bare root. They are also many years old, and as a result, they might have minor scaring but will arrive healthy and looking great.</p>\n{%endif%}"
+          }
+        },
+        "custom_XwApwD": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "<div class=\"pot-available-note\" style=\"display:none;\"><i><strong><u>Please note:</u></strong></i>\n  Pot available for nursery pot.\n</div>"
+          }
+        },
+        "custom_z6djRD": {
+          "type": "custom",
+          "settings": {
+            "code": "{%if product.tags contains 'houseplant' or product.tags contains 'Houseplant' %}\n{%else%}\n<p class=\"drought-only product-type-{{product.type}}\">\n<i><strong><u>Please note:</u></strong></i> All perennial drought tolerant plants 6 inch and larger plants will be shipped bare root. Before sending perennial plants, we often trim the leafy parts and remove flowers or buds. This helps them survive shipping and adjust to transplanting better.<br> Perennial plants shipped Mon - Wed only.</p>\n<p class=\"shipping-text\">\n<i><strong><u>Please note:</u></strong></i> Perennial plants shipped Mon - Wed only.\n</p>\n<style>\n.drought-only, .shipping-text{\ncolor: hsl(30, 75%, 60%) !important;\n}\n</style>\n{%endif%}"
+          }
+        },
+        "small_pot_QAN4RG": {
+          "type": "small_pot",
+          "settings": {}
+        },
+        "easify_options_easify_product_options_fmR3Bi": {
+          "type": "shopify://apps/easify-options/blocks/easify-product-options/d2288b18-c1ba-42f5-b3b3-26c75c8820bf",
+          "settings": {}
+        },
+        "c5aa57c5-511c-479d-aa3f-8df23875f5a5": {
+          "type": "custom",
+          "settings": {
+            "code": "<div class=\"skuoutside\">\n  <span>sku:</span>\n  <div class=\"sku-inject\"></div>\n\n  {% if product.type == \"cactus\" or product.type == \"succulent\" or product.tags contains \"Peperomia\" or product.type == \"Drought-tolerant\" or product.type == \"Air Plant\" or product.tags contains \"houseplant\" %}  \n    <div class=\"small-description\">\n      Detailed description of this plant is below...\n    </div>\n  {% endif %}\n\n  {% if product.type == 'pot' %}\n    <div class=\"small-description\">\n      Detailed description of this product is below...\n    </div>\n  {% endif %}\n</div>"
+          }
+        },
+        "houseplant_9MBe9M": {
+          "type": "houseplant",
+          "settings": {
+            "houseplant": "<span class=\"houseplant_text\" style=\"color:hsl(30,75%,60%);display:none\"><i><strong><u>Please note:</u></strong></i> Our large plants are shipped bare root. They are also many years old, and as a result, they might have minor scarring but will arrive healthy and looking great.</span>"
+          }
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "settings": {
+            "inventory_threshold": 6,
+            "inventory_transfers_enable": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Shipping information",
+            "svg_icon": "",
+            "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.</p><p>Ex: Shipping and return policies, size guides, and other common questions.</p>",
+            "page": ""
+          }
+        },
+        "contact": {
+          "type": "contact",
+          "disabled": true,
+          "settings": {
+            "title": "Ask a question",
+            "phone": false
+          }
+        },
+        "e1bc28ef-8999-4a53-83f4-8feafef15d7f": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Cold Climates - ADD HEAT PACK!",
+            "svg_icon": "",
+            "content": "<p>If you live in a cold climate and are expecting temperatures below 40 degrees within the next five days after placing your order, we highly recommend adding a<strong> </strong><span style=\"text-decoration:underline\"><strong>heat pack</strong></span><strong> </strong>to your order. If you do not order a heat pack, we do not send one with your order. </p><p><a href=\"https://planetdesert.com/products/72-hour-heat-pack\" title=\"https://planetdesert.com/products/72-hour-heat-pack\"><strong>BUY HEAT PACKS HERE </strong></a></p><p>**FREE HEAT PACK WITH ORDERS OVER $50 <em>before taxes and shipping</em><span style=\"text-decoration:underline\">- </span><span style=\"text-decoration:underline\"><em><strong>BY REQUEST ONLY</strong></em></span><span style=\"text-decoration:underline\"><em>, PLEASE MAKE A NOTE ON YOUR ORDER.</em></span></p><p>To prevent plants from freezing while in transit, orders placed for areas with extreme severe freezing temperatures will be held for shipment until it is safe to ship. </p>",
+            "page": ""
+          }
+        },
+        "tab_zkttXG": {
+          "type": "tab",
+          "settings": {
+            "title": "Cold Climates - Add Heat Pack!",
+            "svg_icon": "<svg version=\"1.0\" xmlns=\"http://www.w3.org/2000/svg\" width=\"512.000000pt\" height=\"512.000000pt\" viewbox=\"0 0 512.000000 512.000000\" preserveaspectratio=\"xMidYMid meet\">\n\n<g transform=\"translate(0.000000,512.000000) scale(0.100000,-0.100000)\" fill=\"#000000\" stroke=\"none\">\n<path d=\"M3810 5032 l0 -87 -55 -33 -55 -33 -80 47 c-45 25 -82 45 -84 43 -8\n-9 -66 -116 -66 -121 0 -4 36 -27 80 -52 l80 -47 0 -58 0 -59 -80 -47 c-44\n-26 -80 -49 -80 -53 0 -5 58 -112 66 -121 2 -2 39 18 84 43 l80 47 55 -33 55\n-33 0 -87 0 -88 70 0 70 0 0 88 0 88 56 32 55 32 80 -46 c44 -26 81 -45 83\n-43 8 9 66 116 66 121 0 4 -36 27 -80 52 l-80 47 0 58 0 59 80 47 c44 26 80\n49 80 53 0 5 -58 112 -66 121 -2 2 -39 -17 -82 -43 l-79 -46 -57 32 -56 32 0\n88 0 88 -70 0 -70 0 0 -88z m130 -251 c45 -27 45 -28 48 -88 l3 -61 -51 -31\nc-28 -17 -55 -31 -60 -31 -5 0 -32 14 -60 31 l-50 31 0 58 0 58 48 30 c26 17\n54 31 62 31 8 -1 35 -13 60 -28z\"></path>\n<path d=\"M2465 5091 c-85 -39 -125 -110 -125 -221 0 -38 -3 -70 -6 -70 -3 0\n-28 18 -54 40 -62 52 -107 70 -172 70 -127 -1 -218 -93 -218 -223 0 -95 22\n-123 247 -312 l203 -170 0 -87 c0 -49 -3 -88 -6 -88 -3 0 -28 18 -54 40 -61\n51 -107 70 -170 70 -128 0 -219 -92 -220 -220 0 -98 21 -125 247 -315 l203\n-170 0 -172 0 -171 -65 -36 -66 -36 -147 86 c-81 47 -148 87 -149 88 -1 0 -22\n115 -46 253 -50 281 -64 317 -134 367 -33 23 -57 31 -103 34 -81 6 -138 -16\n-189 -74 -51 -58 -65 -113 -50 -199 6 -35 9 -69 7 -74 -1 -6 -37 9 -78 33\nl-76 44 -43 249 c-49 283 -66 327 -139 374 -80 51 -167 50 -246 -2 -81 -54\n-111 -150 -87 -276 5 -24 5 -43 1 -43 -3 0 -31 14 -62 30 -106 57 -208 47\n-281 -28 -115 -118 -81 -284 75 -369 26 -14 45 -29 43 -33 -2 -4 -25 -13 -50\n-20 -156 -44 -228 -191 -159 -328 41 -83 148 -138 231 -117 16 3 133 44 261\n91 l233 84 74 -42 c41 -24 75 -46 75 -49 0 -4 -28 -16 -62 -29 -126 -45 -192\n-152 -167 -269 13 -60 67 -126 123 -152 76 -35 121 -27 375 66 128 47 238 85\n245 85 7 0 78 -37 157 -83 l144 -83 0 -74 0 -74 -144 -83 c-79 -46 -150 -83\n-157 -83 -7 0 -117 38 -245 85 -254 93 -299 101 -375 66 -56 -26 -110 -92\n-123 -152 -25 -117 41 -224 167 -269 34 -13 62 -25 62 -29 0 -3 -34 -25 -75\n-49 l-74 -42 -238 87 c-203 75 -247 88 -299 88 -84 0 -147 -39 -186 -114 -72\n-138 -1 -287 157 -331 25 -7 48 -16 50 -20 2 -4 -17 -19 -43 -33 -156 -85\n-190 -251 -75 -369 73 -75 175 -85 281 -28 31 16 59 30 62 30 4 0 4 -19 -1\n-42 -24 -127 6 -223 87 -277 79 -52 166 -53 246 -2 73 47 90 91 139 374 l43\n249 76 44 c41 24 77 39 78 33 2 -5 -1 -39 -7 -74 -15 -86 -1 -141 50 -199 101\n-114 286 -98 357 32 18 31 36 111 69 295 24 138 45 253 46 253 1 1 68 41 149\n88 l147 86 66 -36 65 -36 0 -171 0 -172 -203 -170 c-226 -190 -247 -217 -247\n-315 1 -128 92 -220 220 -220 63 0 109 19 170 70 26 22 51 40 54 40 3 0 6 -39\n6 -87 l0 -88 -203 -170 c-226 -190 -247 -217 -247 -315 1 -128 92 -220 220\n-220 63 0 109 19 170 70 26 22 51 40 54 40 3 0 6 -33 6 -72 0 -83 20 -137 66\n-180 86 -80 237 -76 316 8 41 44 58 95 58 174 0 38 3 70 6 70 3 0 28 -18 54\n-40 61 -51 107 -70 170 -70 128 0 219 92 220 220 0 98 -21 125 -247 315 l-203\n170 0 88 c0 48 3 87 6 87 3 0 28 -18 54 -40 61 -51 107 -70 170 -70 128 0 219\n92 220 220 0 98 -21 125 -247 315 l-203 170 0 172 0 171 65 36 66 36 147 -86\nc81 -47 148 -86 149 -87 1 -1 22 -116 46 -254 50 -281 64 -317 134 -367 55\n-38 141 -47 208 -21 100 38 155 145 134 260 -16 88 -14 90 71 41 l76 -44 43\n-248 c53 -304 64 -332 145 -378 82 -47 163 -46 239 5 82 54 112 150 88 277 -5\n23 -5 42 -1 42 3 0 31 -14 62 -30 72 -39 131 -47 195 -26 122 41 187 185 134\n301 -20 44 -76 98 -136 131 l-39 21 60 22 c90 34 128 63 158 122 68 138 -13\n303 -160 325 -56 8 -57 8 -332 -92 l-233 -84 -74 42 c-41 24 -75 46 -75 49 0\n4 28 16 63 29 125 45 191 152 166 269 -13 60 -67 126 -123 152 -76 35 -121 27\n-375 -66 -128 -47 -238 -85 -245 -85 -7 0 -78 37 -157 83 l-144 83 0 74 0 74\n144 83 c79 46 150 83 157 83 7 0 117 -38 245 -85 254 -93 299 -101 375 -66 56\n26 110 92 123 152 25 117 -41 224 -166 269 -35 13 -63 25 -63 29 0 3 34 25 75\n49 l74 42 233 -84 c275 -100 276 -100 332 -92 147 22 228 187 160 325 -30 59\n-68 88 -158 122 l-60 22 39 21 c60 33 116 87 136 131 53 116 -12 260 -134 301\n-64 21 -123 13 -195 -26 -31 -16 -59 -30 -62 -30 -4 0 -4 19 1 43 16 80 11\n140 -17 195 -74 148 -283 161 -378 23 -24 -35 -34 -74 -74 -301 l-47 -262 -75\n-44 c-85 -49 -87 -47 -71 41 15 81 0 142 -50 199 -101 114 -285 98 -357 -32\n-18 -31 -36 -111 -69 -295 -24 -138 -45 -253 -46 -254 -1 -1 -68 -40 -149 -87\nl-147 -86 -66 36 -65 36 0 171 0 172 203 170 c226 190 247 217 247 315 -1 128\n-92 220 -220 220 -63 0 -109 -19 -170 -70 -26 -22 -51 -40 -54 -40 -3 0 -6 39\n-6 88 l0 87 203 170 c226 190 247 217 247 315 -1 128 -92 220 -220 220 -63 0\n-109 -19 -170 -70 -26 -22 -51 -40 -54 -40 -3 0 -6 33 -6 73 -1 111 -44 185\n-132 221 -50 21 -134 20 -183 -3z m150 -152 c18 -18 20 -36 25 -238 l5 -218\n160 134 c88 74 171 139 183 144 52 20 113 -42 93 -94 -6 -14 -105 -105 -221\n-202 -117 -98 -214 -183 -216 -189 -2 -6 -3 -135 -2 -287 l3 -276 160 134 c88\n74 171 139 183 144 32 12 73 -8 90 -44 11 -22 11 -32 0 -54 -7 -14 -107 -106\n-223 -203 l-210 -176 -3 -266 -2 -265 60 -22 c33 -12 90 -45 126 -72 l66 -50\n220 127 c135 78 223 135 229 148 5 12 29 137 53 278 25 142 50 267 56 278 25\n47 93 45 126 -4 15 -25 14 -37 -21 -236 -21 -116 -35 -214 -32 -217 4 -4 468\n255 484 271 1 0 22 120 48 266 25 146 52 280 60 297 26 58 106 58 130 0 11\n-28 8 -56 -25 -242 -21 -115 -36 -212 -34 -214 1 -2 85 45 186 103 101 58 194\n106 207 106 36 0 71 -37 71 -76 0 -43 -19 -57 -223 -174 -103 -59 -161 -98\n-153 -102 11 -6 159 -61 380 -140 75 -28 57 -148 -23 -148 -10 0 -137 43 -280\n96 -144 52 -266 94 -270 92 -24 -8 -480 -274 -481 -279 0 -3 60 -27 133 -54\n271 -97 284 -103 298 -137 10 -26 10 -35 -2 -57 -8 -14 -26 -32 -41 -39 -24\n-11 -52 -3 -299 87 l-273 98 -80 -47 c-45 -26 -145 -84 -224 -130 l-143 -82 8\n-61 c4 -34 7 -73 7 -87 0 -14 -3 -53 -7 -87 l-8 -61 143 -82 c79 -46 179 -104\n224 -130 l80 -47 273 98 c247 90 275 98 299 87 15 -7 33 -25 41 -39 12 -22 12\n-31 2 -57 -14 -34 -27 -40 -298 -137 -73 -27 -133 -51 -133 -54 1 -5 457 -271\n481 -279 4 -2 126 40 270 92 143 53 270 96 280 96 80 0 98 -120 23 -148 -221\n-79 -369 -134 -380 -140 -8 -4 50 -43 153 -102 203 -116 223 -132 223 -173 0\n-38 -35 -77 -69 -77 -15 0 -106 46 -209 106 -101 58 -185 105 -186 103 -2 -2\n13 -98 34 -214 33 -186 36 -214 25 -242 -24 -58 -104 -58 -130 0 -8 17 -35\n151 -60 297 -26 146 -47 266 -48 266 -16 16 -480 275 -484 271 -3 -3 11 -101\n32 -217 35 -199 36 -211 21 -236 -33 -49 -101 -51 -126 -4 -6 11 -31 136 -56\n278 -24 141 -48 266 -53 278 -6 13 -94 70 -229 148 l-220 127 -66 -50 c-36\n-27 -93 -60 -126 -72 l-60 -22 2 -265 3 -266 210 -176 c116 -98 216 -189 223\n-204 11 -21 11 -31 0 -53 -17 -36 -58 -56 -90 -44 -12 5 -95 70 -183 144\nl-160 134 -3 -276 c-1 -152 0 -281 2 -287 2 -6 99 -91 216 -189 116 -97 215\n-188 221 -202 20 -52 -41 -114 -93 -94 -12 5 -95 70 -183 144 l-160 134 -5\n-218 c-5 -208 -6 -220 -27 -240 -29 -29 -77 -29 -106 0 -21 21 -22 30 -25 241\nl-3 220 -162 -136 c-89 -75 -173 -140 -185 -145 -51 -20 -113 42 -93 94 5 13\n105 104 221 202 117 98 214 183 216 189 2 6 3 135 2 287 l-3 276 -160 -134\nc-88 -74 -171 -139 -183 -144 -32 -12 -73 8 -90 44 -11 22 -11 32 0 54 7 14\n108 106 223 203 l210 176 3 266 2 265 -60 22 c-33 12 -90 45 -126 72 l-66 50\n-220 -127 c-135 -78 -223 -135 -229 -148 -5 -12 -29 -137 -53 -278 -25 -142\n-50 -267 -56 -278 -25 -47 -93 -45 -126 4 -15 25 -14 37 21 236 21 116 35 214\n32 217 -4 4 -468 -255 -484 -271 -1 0 -22 -120 -48 -266 -25 -146 -52 -280\n-60 -297 -26 -58 -106 -58 -130 0 -11 28 -8 56 25 242 21 116 36 212 34 214\n-1 2 -85 -45 -186 -103 -101 -58 -194 -106 -207 -106 -62 0 -94 85 -49 127 13\n11 100 64 193 118 94 54 171 99 173 100 4 3 -65 29 -276 106 -124 45 -145 56\n-158 82 -26 49 9 107 65 107 10 0 137 -43 280 -96 144 -52 265 -94 270 -92 24\n8 481 274 481 279 0 3 -60 27 -132 54 -272 97 -285 103 -299 137 -15 38 2 76\n43 96 24 11 51 3 299 -87 l273 -98 80 47 c45 25 145 84 224 129 l143 83 -8 62\nc-9 76 -9 96 0 172 l8 62 -143 83 c-79 45 -179 104 -224 129 l-80 47 -273 -98\nc-248 -90 -275 -98 -299 -87 -41 20 -58 58 -43 96 14 34 27 40 299 137 72 27\n132 51 132 54 0 5 -457 271 -481 279 -5 2 -126 -40 -270 -92 -143 -53 -270\n-96 -280 -96 -32 0 -55 17 -68 49 -10 24 -10 34 3 58 13 26 34 37 158 82 211\n77 280 103 276 106 -2 1 -79 46 -173 100 -93 53 -180 106 -193 118 -44 41 -13\n127 47 127 15 0 106 -46 209 -106 101 -58 185 -105 186 -103 2 2 -13 99 -34\n214 -33 186 -36 214 -25 242 24 58 104 58 130 0 8 -17 35 -151 60 -297 26\n-146 47 -265 48 -266 24 -20 480 -275 484 -271 3 3 -11 101 -32 217 -35 199\n-36 211 -21 236 33 49 101 51 126 4 6 -11 31 -136 56 -278 24 -141 48 -266 53\n-278 6 -13 94 -70 229 -148 l220 -127 66 50 c36 27 93 60 126 72 l60 22 -2\n265 -3 266 -210 176 c-115 97 -216 189 -223 203 -11 22 -11 32 0 54 17 36 58\n56 90 44 12 -5 95 -70 183 -144 l160 -134 3 276 c1 152 0 281 -2 287 -2 6 -99\n91 -216 189 -116 98 -216 189 -221 202 -20 52 42 114 93 94 12 -5 96 -70 186\n-145 l162 -136 0 207 c0 223 5 247 50 270 29 15 57 9 85 -18z\"></path>\n<path d=\"M2450 2809 c-101 -45 -160 -138 -160 -249 1 -156 115 -270 270 -270\n155 0 269 114 270 270 0 155 -114 270 -270 270 -44 0 -80 -7 -110 -21z m145\n-129 c25 0 74 -51 84 -86 26 -93 -60 -179 -152 -153 -91 25 -121 144 -53 208\n25 24 73 42 94 35 8 -2 20 -4 27 -4z\"></path>\n<path d=\"M1050 4930 l0 -70 70 0 70 0 0 70 0 70 -70 0 -70 0 0 -70z\"></path>\n<path d=\"M800 4680 l0 -70 70 0 70 0 0 70 0 70 -70 0 -70 0 0 -70z\"></path>\n<path d=\"M1300 4680 l0 -70 70 0 70 0 0 70 0 70 -70 0 -70 0 0 -70z\"></path>\n<path d=\"M1050 4430 l0 -70 70 0 70 0 0 70 0 70 -70 0 -70 0 0 -70z\"></path>\n<path d=\"M1170 772 l0 -87 -55 -33 -55 -33 -80 47 c-45 25 -82 45 -84 43 -8\n-9 -66 -116 -66 -121 0 -4 36 -27 80 -52 l80 -47 0 -58 0 -59 -80 -47 c-44\n-26 -80 -49 -80 -53 0 -5 58 -112 66 -121 2 -2 39 18 84 43 l80 47 55 -33 55\n-33 0 -87 0 -88 70 0 70 0 0 88 0 88 56 32 55 32 80 -46 c44 -26 81 -45 83\n-43 8 9 66 116 66 121 0 4 -36 27 -80 52 l-80 47 0 58 0 59 80 47 c44 26 80\n49 80 53 0 5 -58 112 -66 121 -2 2 -39 -17 -82 -43 l-79 -46 -57 32 -56 32 0\n88 0 88 -70 0 -70 0 0 -88z m130 -251 c45 -27 45 -28 48 -88 l3 -61 -51 -31\nc-28 -17 -55 -31 -60 -31 -5 0 -32 14 -60 31 l-50 31 0 58 0 58 48 30 c26 17\n54 31 62 31 8 -1 35 -13 60 -28z\"></path>\n<path d=\"M3930 690 l0 -70 70 0 70 0 0 70 0 70 -70 0 -70 0 0 -70z\"></path>\n<path d=\"M3680 440 l0 -70 70 0 70 0 0 70 0 70 -70 0 -70 0 0 -70z\"></path>\n<path d=\"M4180 440 l0 -70 70 0 70 0 0 70 0 70 -70 0 -70 0 0 -70z\"></path>\n<path d=\"M3930 190 l0 -70 70 0 70 0 0 70 0 70 -70 0 -70 0 0 -70z\"></path>\n</g>\n</svg>",
+            "content": "<p>If you live in a cold climate and are expecting temperatures below 40 degrees within the next five days after placing your order, we highly recommend adding a<strong> </strong><span style=\"text-decoration:underline\"><strong>heat pack</strong></span><strong> </strong>to your order. If you do not order a heat pack, we do not send one with your order. </p><p><a href=\"https://planetdesert.com/products/72-hour-heat-pack\" title=\"https://planetdesert.com/products/72-hour-heat-pack\"><strong>BUY HEAT PACKS HERE </strong></a></p><p>**FREE HEAT PACK WITH ORDERS OVER $50 <em>before taxes and shipping</em><span style=\"text-decoration:underline\">- </span><span style=\"text-decoration:underline\"><em><strong>BY REQUEST ONLY</strong></em></span><span style=\"text-decoration:underline\"><em>, PLEASE MAKE A NOTE ON YOUR ORDER.</em></span></p><p>To prevent plants from freezing while in transit, orders placed for areas with extreme severe freezing temperatures will be held for shipment until it is safe to ship. </p>",
+            "page": ""
+          }
+        },
+        "14a1deba-66b4-4b0d-aa46-b4570a7339b2": {
+          "type": "tab",
+          "settings": {
+            "title": "100% Satisfaction Guaranteed!",
+            "svg_icon": "<?xml version=\"1.0\" ?><svg id=\"Icons\" viewbox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><defs><style>.cls-1{fill:#232323;}</style></defs><path class=\"cls-1\" d=\"M22.814,9.216l-.826-5.368A1,1,0,0,0,21,3C15.533,3,12.731.316,12.707.293a1,1,0,0,0-1.41,0C11.269.316,8.467,3,3,3a1,1,0,0,0-.988.848L1.186,9.216A12.033,12.033,0,0,0,7.3,21.576l4.22,2.3a1,1,0,0,0,.958,0l4.22-2.3A12.033,12.033,0,0,0,22.814,9.216Zm-7.072,10.6L12,21.861,8.258,19.82a10.029,10.029,0,0,1-5.1-10.3l.7-4.541A14.717,14.717,0,0,0,12,2.3,14.717,14.717,0,0,0,20.139,4.98l.7,4.54A10.029,10.029,0,0,1,15.742,19.82Z\"></path><path class=\"cls-1\" d=\"M15.293,8.293,10,13.586,8.707,12.293a1,1,0,1,0-1.414,1.414l2,2a1,1,0,0,0,1.414,0l6-6a1,1,0,0,0-1.414-1.414Z\"></path></svg>",
+            "content": "<p>We guarantee our premium plants will arrive happy and healthy. If not we will replace them for free.<br/><br/>What makes us different is the passion for highest quality plants and the attention to the detail on all we do here at Planet Desert. We are confident in the quality of our products. That’s why all our plants have a 100% satisfaction guarantee.</p><p>If you are not 100% satisfied with your purchase, you can return the product and get a product refund or exchange the product for another one, be it similar or not. Shipping charges may apply.</p><p>You can return a product for up to 14 days from the date you purchased it. Please submit photos with your order number to <a href=\"mailto:info@planetdesert.com\">info@planetdesert.com</a> to initiate this request and receive next steps for processing. Shipping fees may apply.</p><p>Any product you return must be in the same condition you received it and in the original packaging. Please keep the receipt.</p>",
+            "page": ""
+          }
+        },
+        "tab_pFzT8Q": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping & Returns",
+            "svg_icon": "<?xml version=\"1.0\" ?><svg viewbox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M 0 6 L 0 8 L 19 8 L 19 23 L 12.84375 23 C 12.398438 21.28125 10.851563 20 9 20 C 7.148438 20 5.601563 21.28125 5.15625 23 L 4 23 L 4 18 L 2 18 L 2 25 L 5.15625 25 C 5.601563 26.71875 7.148438 28 9 28 C 10.851563 28 12.398438 26.71875 12.84375 25 L 21.15625 25 C 21.601563 26.71875 23.148438 28 25 28 C 26.851563 28 28.398438 26.71875 28.84375 25 L 32 25 L 32 16.84375 L 31.9375 16.6875 L 29.9375 10.6875 L 29.71875 10 L 21 10 L 21 6 Z M 1 10 L 1 12 L 10 12 L 10 10 Z M 21 12 L 28.28125 12 L 30 17.125 L 30 23 L 28.84375 23 C 28.398438 21.28125 26.851563 20 25 20 C 23.148438 20 21.601563 21.28125 21.15625 23 L 21 23 Z M 2 14 L 2 16 L 8 16 L 8 14 Z M 9 22 C 10.117188 22 11 22.882813 11 24 C 11 25.117188 10.117188 26 9 26 C 7.882813 26 7 25.117188 7 24 C 7 22.882813 7.882813 22 9 22 Z M 25 22 C 26.117188 22 27 22.882813 27 24 C 27 25.117188 26.117188 26 25 26 C 23.882813 26 23 25.117188 23 24 C 23 22.882813 23.882813 22 25 22 Z\"></path></svg>",
+            "content": "<p>FREE SHIPPING ON ALL ORDERS OVER $69 in the Continental US.</p><p>Any plant that is 6\" and larger that is not in our Houseplant category will be shipped bare root (without a pot).</p><p>What makes us different is the passion and the attention to detail in all we do here at Planet Desert. We are confident in the quality of our products. That’s why all our plants have a 100% satisfaction guarantee.</p><p>If you are not 100% satisfied with your purchase, you can return the product and get a refund or exchange it for another one — similar or not. Shipping charges may apply.</p><p>You can return a product for up to 14 days from the date of purchase. Please submit photos with your order number to <a href=\"mailto:info@planetdesert.com\">info@planetdesert.com</a> to initiate your return. Shipping fees may apply.</p>",
+            "page": ""
+          }
+        },
+        "tab_yBKEMW": {
+          "type": "tab",
+          "settings": {
+            "title": "Sending a Gift?",
+            "svg_icon": "<?xml version=\"1.0\" ?><svg viewbox=\"0 0 256 256\" xmlns=\"http://www.w3.org/2000/svg\"><rect fill=\"none\" height=\"256\" width=\"256\"></rect><rect fill=\"none\" height=\"48\" rx=\"8\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"16\" width=\"192\" x=\"32\" y=\"80\"></rect><path d=\"M208,128v72a8,8,0,0,1-8,8H56a8,8,0,0,1-8-8V128\" fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"16\"></path><line fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"16\" x1=\"128\" x2=\"128\" y1=\"80\" y2=\"208\"></line><path d=\"M173.3,68.7C161.9,80,128,80,128,80s0-33.9,11.3-45.3a24,24,0,0,1,34,34Z\" fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"16\"></path><path d=\"M82.7,68.7C94.1,80,128,80,128,80s0-33.9-11.3-45.3a24,24,0,0,0-34,34Z\" fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"16\"></path></svg>",
+            "content": "<ul><li>First, lucky them! Second, in the cart — before checkout  you’ll find an option to add a custom Greeting Card. </li><li>Click the Custom Greeting Card button to browse and select the design you like best. We have gift cards for most occasions.</li><li>After selecting your greeting card, scroll to the bottom of the cart. There you'll see a dropdown labeled Add a note to your order.</li><li>Use that note box to enter the message you’d like us to include with your gift. We’ll make sure it’s printed and packed with care!</li></ul>",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "e587b954-6527-4e4f-a14b-2afe4b7b4d21",
+        "price",
+        "separator",
+        "32727012-a894-4fb3-a556-a05b362872df",
+        "variant_picker",
+        "pot_selector_block",
+        "1bb051c8-a27a-466d-beae-b006b002869a",
+        "a5efb4d3-5d31-4a80-9a2a-f468f060f3f9",
+        "2b6eef41-cddb-4154-8bf1-97d7ebc6eb68",
+        "custom_XwApwD",
+        "custom_z6djRD",
+        "small_pot_QAN4RG",
+        "easify_options_easify_product_options_fmR3Bi",
+        "c5aa57c5-511c-479d-aa3f-8df23875f5a5",
+        "houseplant_9MBe9M",
+        "inventory_status",
+        "buy_buttons",
+        "tab",
+        "contact",
+        "e1bc28ef-8999-4a53-83f4-8feafef15d7f",
+        "tab_zkttXG",
+        "14a1deba-66b4-4b0d-aa46-b4570a7339b2",
+        "tab_pFzT8Q",
+        "tab_yBKEMW",
+        "share"
+      ],
+      "custom_css": [],
+      "settings": {
+        "sku_enable": true,
+        "image_position": "left",
+        "image_size": "large",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_height": "flexible",
+        "thumbnail_arrows": true,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "blocks": {
+        "a18d2c3e-2438-422f-8191-5794d97813ad": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "c263ee8c-e97c-455a-bc13-998616f39785": {
+          "type": "custom",
+          "settings": {
+            "code": "{{ collection.metafields.houseplants.heat_pack.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "a18d2c3e-2438-422f-8191-5794d97813ad",
+        "c263ee8c-e97c-455a-bc13-998616f39785"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": true,
+        "paragraph_metafields_tony": "Colder regions warning: If you are expecting temperatures below 40 degrees within the next five days after placing your order, we highly recommend adding a heat pack to your order. We are now offering 72-hour heat packs by request. If your order is $50.00 or more, you will get a heat pack free of charge. To prevent plants from freezing while in transit, orders placed for areas with extreme severe freezing temperatures will be held for shipment until it is safe to ship. Care instructions are included in every package you order. We ship via USPS Priority Mail, and we calculate the shipping cost based on the weight and volume of your purchase. Depending on your location, we will ship the plants on a certain day to avoid transit time during weekends or holidays. If you have any questions or comments, please feel free to contact us at any time."
+      }
+    },
+    "16615443533027448e": {
+      "type": "apps",
+      "blocks": {
+        "8834850e-cf04-4cc4-b3f1-6ff25b79d7af": {
+          "type": "shopify://apps/stamped-reviews/blocks/carousel/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "title": "Real Reviews from Real Customers",
+            "auto_play": false,
+            "take": 30,
+            "color_title": "",
+            "color_star": "",
+            "color_text": "",
+            "color_link": "",
+            "review_ids": "",
+            "product_ids": "",
+            "category": "",
+            "product_brand": "",
+            "tags": "",
+            "min_rating": "none",
+            "fill_empty": false,
+            "random": false,
+            "with_photos": false
+          }
+        }
+      },
+      "block_order": [
+        "8834850e-cf04-4cc4-b3f1-6ff25b79d7af"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "product_recommendations_heading": "You may also like",
+        "related_count": 20
+      }
+    },
+    "1670358069d4fbb9cb": {
+      "type": "apps",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+        "recent_count": 3
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "16615443533027448e",
+    "product-recommendations",
+    "1670358069d4fbb9cb",
+    "recently-viewed",
+    "collection-return"
+  ]
+}
